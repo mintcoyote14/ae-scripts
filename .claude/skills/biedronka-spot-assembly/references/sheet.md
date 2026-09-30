@@ -8,6 +8,11 @@ Google Sheets id `14sx3NGmiSQVzUtOWI2aBmjG_xbHPhfWlQWPSDVFwvw4`. Коннект�
 - **`CNC T<NN> TVC`** — складання **спотів** (`compo`): колонки `nazwa spotu` (`REG_T41A_1`, `FRESH_T41A_1`, `GANG_T41A_1`), `produkt 1/2/3(/4)`, дата здачі, примітки (напр. «(DN)» = Dzień Nauczyciela). Порядок продуктів у назві проєкту = порядок колонок.
 - У CSV рядки можуть зсуватись на 1 відносно екрана; знаходь продукт за текстом у колонці C.
 
+## Вкладки фестивалів та інших проєктів
+Назви вкладок: `CNC T<NN> oferty|TVC` (REG/FRESH/GANG), `FESTIWAL WĘDLIN T<NN> TVC` + `FESTIWAL WĘDLINY T<NN> oferty` (у TVC і oferty написання різне: WĘDLIN / WĘDLINY), `FESTIWAL NABIAŁU T<NN> TVC|oferty`, `WEEKEND T<NN>C TVC|oferty`, `OSTATNI DM T<NN>A …`, `10-ty miesiąca T<NN> …`, `CNC T<NN> … _ŚNIEGOWCE`. Шукай назву за номером тижня, не вгадуй написання: список вкладок читається з DOM (`.docs-sheet-tab`, активна має клас `docs-sheet-active-tab`).
+Колонки вкладки фестивалю `oferty` (як у CNC): A тиждень, B nr oferty, C produkt, D termin oddania, E termin oferty, F назва продукту, G mechanizm/cena, H cena regularna, I limit, J legal, K VO, L `STICKERY`, M `WIZKI/NR INDEKSÓW` (індекси продуктів), N `UWAGI` (у фестивалях у N: лінк на zip від агенції `http://download.agencjadart.com/file/r_<дата>_<час>.zip` або «wizki z 37 festiwal wędlin» = взяти з фестивалю T37; колонка O `UWAGI FOTO`). У вкладках фестивалів лінки ведуть на сервер агенції, не на transfernow.
+Фестивальні візки (`WIZKI`) зберігаються в `X:\BiedronkaZawszeNiskieCeny2026_232084\client\YYYYMMDD_WIZKI\…`.
+
 ## Три шоу у таблиці
 - **REG** — звичайні оферти, 2 споти на частину (`_1_`, `_2_`).
 - **FRESH** — м'ясо, риба + іноді одна оферта з REG (залежить від замовлення). Колонка A блоку каже частину A або B цільового тижня.

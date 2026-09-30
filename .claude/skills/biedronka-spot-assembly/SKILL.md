@@ -59,6 +59,8 @@ description: Складання споту/бампера Biedronka в After Eff
 | Бампери (6 с) | `references/bumper.md` |
 | Стікери, значки, мега-пака | `references/stickers.md` |
 | Заміна цінівки, коли приходить поправка (нова версія PSD) | `references/replace-cenowka.md` |
+| Перенос візок без змін в інший тиждень (як кнопка DMP; літера C питати) | `references/carry-over.md` |
+| Обробка візок від агенції в Photoshop (`client\…_WIZKI`, скрипт маски) | `references/wizki-photoshop.md` |
 | Практика роботи з AE MCP (операції, пастки) | `references/ae-mcp.md` |
 
 ## Відкриті питання (ще не автоматизовано)
