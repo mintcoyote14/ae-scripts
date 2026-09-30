@@ -1,0 +1,1983 @@
+{
+    "layouts": [
+        {
+            "name": "Motion Tools Layout",
+            "title": "Motion Tools",
+            "default": true,
+            "content": [
+                {
+                    "name": "MTB Add Parent Null",
+                    "displayName": "Parent Null",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/resize.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Clone",
+                    "displayName": "Clone",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/cloner.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Collect Colors",
+                    "displayName": "Collect Colors",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/collect-colors.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Crop Comp",
+                    "displayName": "Crop Comp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/auto-crop.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Duplicate Comp",
+                    "displayName": "Duplicate Comp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/duplicator.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Elastic",
+                    "displayName": "Elastic",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/elastic.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Extract Shapes",
+                    "displayName": "Extract Shapes",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/extract.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Loop In/Out",
+                    "displayName": "Loop In/Out",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/loop-in-out.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Merge Shapes",
+                    "displayName": "Merge Shapes",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/merge.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Nulls To Point",
+                    "displayName": "Nulls To Point",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/nulls-to-point.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Shapes From Vector",
+                    "displayName": "Shapes From Vector",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/shapes-from-vector.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Unprecomp",
+                    "displayName": "Unprecomp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/unprecomp.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Easings Manager",
+                    "displayName": "Easings Manager",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#F1F1F1",
+                        "buttonHoverColor": "#EA9311",
+                        "icon": "transparent"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 0
+                    }
+                },
+                {
+                    "name": "MTB Easy Keyframes",
+                    "displayName": "Easy Keyframes",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "primaryColor": "#F98585",
+                        "secondaryColor": "#E4E4E4",
+                        "buttonHoverColor": "orange"
+                    },
+                    "transform": {
+                        "vCells": 2,
+                        "hCells": 2,
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "name": "MTB Easy Anchor Point",
+                    "displayName": "Easy Anchor Point",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#A183FD",
+                        "primaryHoverColor": "red",
+                        "primaryColor": "#DDCAFE",
+                        "buttonHoverColor": "orange"
+                    },
+                    "transform": {
+                        "vCells": 2,
+                        "hCells": 2,
+                        "x": 0,
+                        "y": 2
+                    }
+                },
+                {
+                    "name": "MTB Selector",
+                    "displayName": "Selector",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#3E6169",
+                        "primaryColor": "#F98585"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 1
+                    }
+                },
+                {
+                    "name": "MTB Sequencer",
+                    "displayName": "Sequencer",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonHoverColor": "orange",
+                        "buttonIconColor": "#EFEFEF",
+                        "primaryColor": "#9898985C"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 2
+                    }
+                },
+                {
+                    "fileLink": "X:\\_users\\ArtemP\\_AE_\\MotionTools\\scripts\\1_MD.jsx",
+                    "name": "MD",
+                    "type": "execute-script",
+                    "transform": {
+                        "x": 2,
+                        "y": 3,
+                        "hCells": 1,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "icon": "",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "showLink": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "showIcon": false,
+                        "showName": true,
+                        "textColor": "#fff"
+                    },
+                    "displayName": "MD",
+                    "info": {
+                        "set": "Imported Scripts",
+                        "description": "Imported script from 1_MD.jsx",
+                        "helptip": "Execute 1_MD.jsx"
+                    }
+                },
+                {
+                    "fileLink": "X:\\_users\\ArtemP\\_AE_\\MotionTools\\scripts\\2_T.jsx",
+                    "name": "Opacity 50% + Guide",
+                    "type": "execute-script",
+                    "transform": {
+                        "x": 3,
+                        "y": 3,
+                        "hCells": 1,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "icon": "",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "showLink": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "showIcon": false,
+                        "showName": true,
+                        "textColor": "#fff"
+                    },
+                    "displayName": "T",
+                    "info": {
+                        "set": "Imported Scripts",
+                        "description": "",
+                        "helptip": ""
+                    }
+                },
+                {
+                    "fileLink": "X:\\_users\\ArtemP\\_AE_\\MotionTools\\scripts\\5_Fo.jsx",
+                    "name": "Import Folie",
+                    "type": "execute-script",
+                    "transform": {
+                        "x": 1,
+                        "y": 7,
+                        "hCells": 1,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "icon": "",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "showLink": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "showIcon": false,
+                        "showName": true,
+                        "textColor": "#fff"
+                    },
+                    "displayName": "Fo",
+                    "info": {
+                        "set": "Imported Scripts",
+                        "description": "",
+                        "helptip": ""
+                    }
+                },
+                {
+                    "fileLink": "X:\\_users\\ArtemP\\_AE_\\MotionTools\\scripts\\4_FF.jsx",
+                    "name": "Freeze Frame",
+                    "type": "execute-script",
+                    "transform": {
+                        "x": 0,
+                        "y": 7,
+                        "hCells": 1,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "icon": "",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "showLink": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "showIcon": false,
+                        "showName": true,
+                        "textColor": "#fff"
+                    },
+                    "displayName": "FF",
+                    "info": {
+                        "set": "Imported Scripts",
+                        "description": "Скрипт робить Freeze Frame — заморожує виділені шари на поточному кадрі таймлайну.\n",
+                        "helptip": ""
+                    }
+                },
+                {
+                    "fileLink": "X:\\_users\\ArtemP\\_AE_\\MotionTools\\scripts\\6_PC.jsx",
+                    "name": "PreComp+",
+                    "type": "execute-script",
+                    "transform": {
+                        "x": 3,
+                        "y": 7,
+                        "hCells": 1,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "icon": "",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "showLink": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "showIcon": false,
+                        "showName": true,
+                        "textColor": "#fff"
+                    },
+                    "displayName": "PreComp",
+                    "info": {
+                        "set": "Imported Scripts",
+                        "description": "Скрипт прекомпозує кожен виділений шар у власну композицію за його розміром.\n",
+                        "helptip": ""
+                    }
+                },
+                {
+                    "fileLink": "X:\\_users\\ArtemP\\_AE_\\MotionTools\\scripts\\8_CD.jsx",
+                    "name": "Comp Duration",
+                    "type": "execute-script",
+                    "transform": {
+                        "x": 2,
+                        "y": 7,
+                        "hCells": 1,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "icon": "",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "showLink": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "showIcon": false,
+                        "showName": true,
+                        "textColor": "#fff"
+                    },
+                    "displayName": "CD",
+                    "info": {
+                        "set": "Imported Scripts",
+                        "description": "Скрипт відкриває маленьку панель для швидкої зміни тривалості композицій у кадрах.\n",
+                        "helptip": ""
+                    }
+                },
+                {
+                    "bundledScript": "textsplit-apply.jsx",
+                    "name": "MTB Text Split",
+                    "type": "execute-script",
+                    "transform": {
+                        "x": 1,
+                        "y": 8,
+                        "hCells": 1,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "showLink": false,
+                        "icon": "../icons/text-split.svg",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "bgColor": "transparent",
+                        "bgColor2": "#000000",
+                        "bgType": 1,
+                        "showIcon": true,
+                        "showName": false,
+                        "textColor": "#fff",
+                        "iconsSize": "layout"
+                    },
+                    "displayName": "Text Split",
+                    "info": {
+                        "set": "motion_tools_basic",
+                        "description": "Split text layer into separate layers by words, lines, or characters.",
+                        "helptip": "Click - Split by words.\nAlt+Click - Split by characters.\nShift+Click - Split by lines.\nCtrl/Cmd+Click - Split by lines (Paragraph mode)."
+                    }
+                },
+                {
+                    "name": "MTB Create Proxy",
+                    "type": "function",
+                    "transform": {
+                        "x": 2,
+                        "y": 8,
+                        "hCells": 1,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "icon": "../icons/MTP_CreateProxy.svg",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "bgColor": "transparent",
+                        "bgColor2": "#000000",
+                        "bgType": 1,
+                        "showIcon": true,
+                        "showName": false,
+                        "textColor": "#fff",
+                        "iconsSize": "layout"
+                    },
+                    "displayName": "Simple Proxy",
+                    "info": {
+                        "set": "motion_tools_basic",
+                        "description": "Create Proxy for selected layers",
+                        "helptip": "Create Proxy for selected layers"
+                    }
+                },
+                {
+                    "fileLink": "X:\\_users\\ArtemP\\_AE_\\scripts\\duplicate_comp_replace_layer.jsx",
+                    "name": "Duplicate comp replace layer",
+                    "type": "execute-script",
+                    "transform": {
+                        "x": 3,
+                        "y": 8,
+                        "hCells": 1,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "icon": "assets://icons/icon_duplicate_replace.png",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "bgColor": "transparent",
+                        "primaryColor": "#fff",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "showIcon": true,
+                        "showName": false,
+                        "textColor": "#fff",
+                        "showLink": true
+                    },
+                    "displayName": "DCRL",
+                    "info": {
+                        "description": "Duplicates the active comp and swaps the selected layer's source for a fresh copy of its precomp",
+                        "helptip": "Select a precomp layer inside the active comp, then run this. It duplicates the whole comp, duplicates that layer's precomp, and replaces the layer's source in the new comp with the duplicate — so the copy is fully independent from the original.",
+                        "set": "motion_tools_basic"
+                    }
+                },
+                {
+                    "fileLink": "X:\\_users\\ArtemP\\_AE_\\scripts\\replace_render_queue_items.jsx",
+                    "name": "Replace Render Queue Item",
+                    "type": "execute-script",
+                    "transform": {
+                        "x": 0,
+                        "y": 8,
+                        "hCells": 1,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "icon": "lucide:Atom",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "bgColor": "transparent",
+                        "primaryColor": "#fff",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "showIcon": true,
+                        "showName": false,
+                        "textColor": "#fff",
+                        "showLink": true
+                    },
+                    "displayName": "RRQI",
+                    "info": {
+                        "description": "Оновлює вибрані композиції в Render Queue: створює Duplicate with File Name, видаляє старий item і зберігає його позицію, налаштування та шлях до файлу.",
+                        "helptip": "",
+                        "set": "motion_tools_basic"
+                    }
+                },
+                {
+                    "fileLink": "D:\\_SCRIPTS_\\!TASK.jsx",
+                    "name": "TASK",
+                    "type": "execute-script",
+                    "transform": {
+                        "x": 0,
+                        "y": 9,
+                        "hCells": 2,
+                        "vCells": 1
+                    },
+                    "appearance": {
+                        "icon": "",
+                        "iconAlt": "",
+                        "iconCtrl": "",
+                        "iconShift": "",
+                        "bgColor": "transparent",
+                        "primaryColor": "#fff",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "showIcon": false,
+                        "showName": true,
+                        "textColor": "#fff",
+                        "showLink": true
+                    },
+                    "displayName": "TASK",
+                    "info": {
+                        "description": "Universal one-off task slot: D:\\_SCRIPTS_\\!TASK.jsx",
+                        "helptip": "",
+                        "set": "motion_tools_basic"
+                    }
+                }
+            ],
+            "appearance": {
+                "emoji": "",
+                "spacing": 1,
+                "cellWidth": 45,
+                "cellHeight": 45,
+                "showMenuWidget": false,
+                "addButton": true,
+                "cellBorderColor": "#FFFFFF14",
+                "textColor": "#F9F9F9",
+                "buttonColor": "#4F4F4F",
+                "buttonHoverColor": "#6A6A6A",
+                "primaryColor": "#007AFF",
+                "textSize": 12,
+                "panelBGType": 4,
+                "panelBGColor1": "#09181C",
+                "panelBGColor2": "",
+                "panelBGGradientAngle": 90,
+                "panelShowTitleBar": true,
+                "cellBGColor1": "transparent",
+                "cellBGColor2": "",
+                "cellBgType": 1,
+                "cellShowIcon": true,
+                "cellShowName": false,
+                "cellTextColor": "#FFFFFF",
+                "iconsSize": "small",
+                "showTooltips": true,
+                "cellTextVisibility": "none",
+                "cellIconVisibility": "none",
+                "panelTitle": "New Panel"
+            }
+        },
+        {
+            "name": "Motion Tools Layout 2",
+            "title": "Motion Tools Layout 2",
+            "default": false,
+            "content": [
+                {
+                    "name": "MTB Add Limb",
+                    "displayName": "Add Limb",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/limb.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Add Parent Null",
+                    "displayName": "Parent Null",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/resize.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 3
+                    }
+                },
+                {
+                    "name": "MTB Bounce",
+                    "displayName": "Bounce",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/bounce.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Clone",
+                    "displayName": "Clone",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/cloner.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Collect Colors",
+                    "displayName": "Collect Colors",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/collect-colors.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Crop Comp",
+                    "displayName": "Crop Comp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/auto-crop.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Duplicate Comp",
+                    "displayName": "Duplicate Comp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/duplicator.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Elastic",
+                    "displayName": "Elastic",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/elastic.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Extract Shapes",
+                    "displayName": "Extract Shapes",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/extract.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Fix Keys Time",
+                    "displayName": "Fix Keys Time",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/reset-keys.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Loop In/Out",
+                    "displayName": "Loop In/Out",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/loop-in-out.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Merge Shapes",
+                    "displayName": "Merge Shapes",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/merge.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Nulls To Point",
+                    "displayName": "Nulls To Point",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/nulls-to-point.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 3
+                    }
+                },
+                {
+                    "name": "MTB Shapes From Vector",
+                    "displayName": "Shapes From Vector",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/shapes-from-vector.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 7
+                    }
+                },
+                {
+                    "name": "MTB Unprecomp",
+                    "displayName": "Unprecomp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/unprecomp.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Easings Manager",
+                    "displayName": "Easings Manager",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#F1F1F1",
+                        "buttonHoverColor": "#EA9311",
+                        "icon": "transparent"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 0
+                    }
+                },
+                {
+                    "name": "MTB Easy Keyframes",
+                    "displayName": "Easy Keyframes",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "primaryColor": "#F98585",
+                        "secondaryColor": "#E4E4E4",
+                        "buttonHoverColor": "orange"
+                    },
+                    "transform": {
+                        "vCells": 2,
+                        "hCells": 2,
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "name": "MTB Easy Anchor Point",
+                    "displayName": "Easy Anchor Point",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#A183FD",
+                        "primaryHoverColor": "red",
+                        "primaryColor": "#DDCAFE",
+                        "buttonHoverColor": "orange"
+                    },
+                    "transform": {
+                        "vCells": 2,
+                        "hCells": 2,
+                        "x": 0,
+                        "y": 2
+                    }
+                },
+                {
+                    "name": "MTB Selector",
+                    "displayName": "Selector",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#3E6169",
+                        "primaryColor": "#F98585"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 1
+                    }
+                },
+                {
+                    "name": "MTB Sequencer",
+                    "displayName": "Sequencer",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonHoverColor": "orange",
+                        "buttonIconColor": "#EFEFEF",
+                        "primaryColor": "#9898985C"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 2
+                    }
+                }
+            ],
+            "appearance": {
+                "spacing": 3,
+                "cellWidth": 45,
+                "cellHeight": 45,
+                "showMenuWidget": false,
+                "addButton": true,
+                "cellBorderColor": "#FFFFFF14",
+                "emoji": "",
+                "textColor": "#F9F9F9",
+                "buttonColor": "#4F4F4F",
+                "buttonHoverColor": "#6A6A6A",
+                "primaryColor": "#007AFF",
+                "textSize": 12,
+                "panelBGType": 4,
+                "panelBGColor1": "#09181C",
+                "panelBGColor2": "",
+                "panelBGGradientAngle": 90,
+                "panelShowTitleBar": true,
+                "cellBGColor1": "transparent",
+                "cellBGColor2": "",
+                "cellBgType": 1,
+                "cellShowIcon": true,
+                "cellShowName": false,
+                "cellTextColor": "#FFFFFF",
+                "iconsSize": "small",
+                "showTooltips": true,
+                "cellTextVisibility": "none",
+                "cellIconVisibility": "none",
+                "panelTitle": "New Panel"
+            }
+        },
+        {
+            "name": "Motion Tools Layout 3",
+            "title": "Motion Tools Layout 3",
+            "default": false,
+            "content": [
+                {
+                    "name": "MTB Add Limb",
+                    "displayName": "Add Limb",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/limb.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Add Parent Null",
+                    "displayName": "Parent Null",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/resize.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 3
+                    }
+                },
+                {
+                    "name": "MTB Bounce",
+                    "displayName": "Bounce",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/bounce.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Clone",
+                    "displayName": "Clone",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/cloner.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Collect Colors",
+                    "displayName": "Collect Colors",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/collect-colors.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Crop Comp",
+                    "displayName": "Crop Comp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/auto-crop.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Duplicate Comp",
+                    "displayName": "Duplicate Comp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/duplicator.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Elastic",
+                    "displayName": "Elastic",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/elastic.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Extract Shapes",
+                    "displayName": "Extract Shapes",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/extract.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Fix Keys Time",
+                    "displayName": "Fix Keys Time",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/reset-keys.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Loop In/Out",
+                    "displayName": "Loop In/Out",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/loop-in-out.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Merge Shapes",
+                    "displayName": "Merge Shapes",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/merge.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Nulls To Point",
+                    "displayName": "Nulls To Point",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/nulls-to-point.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 3
+                    }
+                },
+                {
+                    "name": "MTB Shapes From Vector",
+                    "displayName": "Shapes From Vector",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/shapes-from-vector.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 7
+                    }
+                },
+                {
+                    "name": "MTB Unprecomp",
+                    "displayName": "Unprecomp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/unprecomp.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Easings Manager",
+                    "displayName": "Easings Manager",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#F1F1F1",
+                        "buttonHoverColor": "#EA9311",
+                        "icon": "transparent"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 0
+                    }
+                },
+                {
+                    "name": "MTB Easy Keyframes",
+                    "displayName": "Easy Keyframes",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "primaryColor": "#F98585",
+                        "secondaryColor": "#E4E4E4",
+                        "buttonHoverColor": "orange"
+                    },
+                    "transform": {
+                        "vCells": 2,
+                        "hCells": 2,
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "name": "MTB Easy Anchor Point",
+                    "displayName": "Easy Anchor Point",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#A183FD",
+                        "primaryHoverColor": "red",
+                        "primaryColor": "#DDCAFE",
+                        "buttonHoverColor": "orange"
+                    },
+                    "transform": {
+                        "vCells": 2,
+                        "hCells": 2,
+                        "x": 0,
+                        "y": 2
+                    }
+                },
+                {
+                    "name": "MTB Selector",
+                    "displayName": "Selector",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#3E6169",
+                        "primaryColor": "#F98585"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 1
+                    }
+                },
+                {
+                    "name": "MTB Sequencer",
+                    "displayName": "Sequencer",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonHoverColor": "orange",
+                        "buttonIconColor": "#EFEFEF",
+                        "primaryColor": "#9898985C"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 2
+                    }
+                }
+            ],
+            "appearance": {
+                "spacing": 3,
+                "cellWidth": 45,
+                "cellHeight": 45,
+                "showMenuWidget": false,
+                "addButton": true,
+                "cellBorderColor": "#FFFFFF14",
+                "emoji": "",
+                "textColor": "#F9F9F9",
+                "buttonColor": "#4F4F4F",
+                "buttonHoverColor": "#6A6A6A",
+                "primaryColor": "#007AFF",
+                "textSize": 12,
+                "panelBGType": 4,
+                "panelBGColor1": "#09181C",
+                "panelBGColor2": "",
+                "panelBGGradientAngle": 90,
+                "panelShowTitleBar": true,
+                "cellBGColor1": "transparent",
+                "cellBGColor2": "",
+                "cellBgType": 1,
+                "cellShowIcon": true,
+                "cellShowName": false,
+                "cellTextColor": "#FFFFFF",
+                "iconsSize": "small",
+                "showTooltips": true,
+                "cellTextVisibility": "none",
+                "cellIconVisibility": "none",
+                "panelTitle": "New Panel"
+            }
+        },
+        {
+            "name": "Motion Tools Layout 4",
+            "title": "Motion Tools Layout 4",
+            "default": false,
+            "content": [
+                {
+                    "name": "MTB Add Limb",
+                    "displayName": "Add Limb",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/limb.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Add Parent Null",
+                    "displayName": "Parent Null",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/resize.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 3
+                    }
+                },
+                {
+                    "name": "MTB Bounce",
+                    "displayName": "Bounce",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/bounce.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Clone",
+                    "displayName": "Clone",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/cloner.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Collect Colors",
+                    "displayName": "Collect Colors",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/collect-colors.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Crop Comp",
+                    "displayName": "Crop Comp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/auto-crop.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 2,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Duplicate Comp",
+                    "displayName": "Duplicate Comp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/duplicator.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Elastic",
+                    "displayName": "Elastic",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/elastic.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Extract Shapes",
+                    "displayName": "Extract Shapes",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/extract.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Fix Keys Time",
+                    "displayName": "Fix Keys Time",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/reset-keys.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 4
+                    }
+                },
+                {
+                    "name": "MTB Loop In/Out",
+                    "displayName": "Loop In/Out",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/loop-in-out.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Merge Shapes",
+                    "displayName": "Merge Shapes",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/merge.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 1,
+                        "y": 5
+                    }
+                },
+                {
+                    "name": "MTB Nulls To Point",
+                    "displayName": "Nulls To Point",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/nulls-to-point.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 3,
+                        "y": 3
+                    }
+                },
+                {
+                    "name": "MTB Shapes From Vector",
+                    "displayName": "Shapes From Vector",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/shapes-from-vector.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 7
+                    }
+                },
+                {
+                    "name": "MTB Unprecomp",
+                    "displayName": "Unprecomp",
+                    "type": "function",
+                    "appearance": {
+                        "showName": false,
+                        "showIcon": true,
+                        "bgColor": "transparent",
+                        "bgColor2": "",
+                        "bgType": 1,
+                        "icon": "../icons/unprecomp.svg",
+                        "textColor": "#fff"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 1,
+                        "x": 0,
+                        "y": 6
+                    }
+                },
+                {
+                    "name": "MTB Easings Manager",
+                    "displayName": "Easings Manager",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#F1F1F1",
+                        "buttonHoverColor": "#EA9311",
+                        "icon": "transparent"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 0
+                    }
+                },
+                {
+                    "name": "MTB Easy Keyframes",
+                    "displayName": "Easy Keyframes",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "primaryColor": "#F98585",
+                        "secondaryColor": "#E4E4E4",
+                        "buttonHoverColor": "orange"
+                    },
+                    "transform": {
+                        "vCells": 2,
+                        "hCells": 2,
+                        "x": 0,
+                        "y": 0
+                    }
+                },
+                {
+                    "name": "MTB Easy Anchor Point",
+                    "displayName": "Easy Anchor Point",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#A183FD",
+                        "primaryHoverColor": "red",
+                        "primaryColor": "#DDCAFE",
+                        "buttonHoverColor": "orange"
+                    },
+                    "transform": {
+                        "vCells": 2,
+                        "hCells": 2,
+                        "x": 0,
+                        "y": 2
+                    }
+                },
+                {
+                    "name": "MTB Selector",
+                    "displayName": "Selector",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonColor": "#3E6169",
+                        "primaryColor": "#F98585"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 1
+                    }
+                },
+                {
+                    "name": "MTB Sequencer",
+                    "displayName": "Sequencer",
+                    "type": "script",
+                    "appearance": {
+                        "bgColor": "transparent",
+                        "buttonHoverColor": "orange",
+                        "buttonIconColor": "#EFEFEF",
+                        "primaryColor": "#9898985C"
+                    },
+                    "transform": {
+                        "vCells": 1,
+                        "hCells": 2,
+                        "x": 2,
+                        "y": 2
+                    }
+                }
+            ],
+            "appearance": {
+                "spacing": 3,
+                "cellWidth": 45,
+                "cellHeight": 45,
+                "showMenuWidget": false,
+                "addButton": true,
+                "cellBorderColor": "#FFFFFF14",
+                "emoji": "",
+                "textColor": "#F9F9F9",
+                "buttonColor": "#4F4F4F",
+                "buttonHoverColor": "#6A6A6A",
+                "primaryColor": "#007AFF",
+                "textSize": 12,
+                "panelBGType": 4,
+                "panelBGColor1": "#09181C",
+                "panelBGColor2": "",
+                "panelBGGradientAngle": 90,
+                "panelShowTitleBar": true,
+                "cellBGColor1": "transparent",
+                "cellBGColor2": "",
+                "cellBgType": 1,
+                "cellShowIcon": true,
+                "cellShowName": false,
+                "cellTextColor": "#FFFFFF",
+                "iconsSize": "small",
+                "showTooltips": true,
+                "cellTextVisibility": "none",
+                "cellIconVisibility": "none",
+                "panelTitle": "New Panel"
+            }
+        }
+    ],
+    "panels": [
+        {
+            "name": "Panel 1",
+            "layout": "Motion Tools Layout"
+        },
+        {
+            "name": "Panel 2",
+            "layout": "Motion Tools Layout 2"
+        },
+        {
+            "name": "Panel 3",
+            "layout": "Motion Tools Layout 3"
+        },
+        {
+            "name": "Panel 4",
+            "layout": "Motion Tools Layout 4"
+        }
+    ]
+}

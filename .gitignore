@@ -1,0 +1,5 @@
+# Machine-specific Claude permissions
+.claude/settings.local.json
+Thumbs.db
+desktop.ini
+*.bak

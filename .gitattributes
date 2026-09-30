@@ -1,0 +1,2 @@
+# Keep bytes exactly as on disk (UTF-8 BOM, CRLF) - no line-ending conversion
+* -text
