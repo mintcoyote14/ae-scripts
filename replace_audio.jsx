@@ -369,6 +369,53 @@
         return it;
     }
 
+    // A comp that sits inside another comp is a piece of the spot, not the spot
+    function usedAsLayer(comp) {
+        var i, j, c, L;
+        for (i = 1; i <= app.project.numItems; i++) {
+            c = app.project.item(i);
+            if (!(c instanceof CompItem) || c.id === comp.id) continue;
+            for (j = 1; j <= c.numLayers; j++) {
+                L = c.layer(j);
+                try { if (L.source && L.source.id === comp.id) return true; } catch (e) {}
+            }
+        }
+        return false;
+    }
+
+    // The master shot: the open comp when it is a top one, otherwise the
+    // BIEDR_... comp nothing else contains, longest first.
+    function masterComp() {
+        var tops = [], i, c, act;
+
+        for (i = 1; i <= app.project.numItems; i++) {
+            c = app.project.item(i);
+            if (!(c instanceof CompItem)) continue;
+            if (usedAsLayer(c)) continue;
+            tops.push(c);
+        }
+        if (!tops.length) return null;
+
+        act = app.project.activeItem;
+        if (act && act instanceof CompItem)
+            for (i = 0; i < tops.length; i++) if (tops[i].id === act.id) return tops[i];
+
+        tops.sort(function (a, b) {
+            var ab = /^BIEDR/i.test(a.name) ? 1 : 0, bb = /^BIEDR/i.test(b.name) ? 1 : 0;
+            if (ab !== bb) return bb - ab;
+            return b.duration - a.duration;
+        });
+        return tops[0];
+    }
+
+    // Already on the timeline? Then nothing is added
+    function layerOf(comp, item) {
+        for (var j = 1; j <= comp.numLayers; j++) {
+            try { if (comp.layer(j).source && comp.layer(j).source.id === item.id) return comp.layer(j); } catch (e) {}
+        }
+        return null;
+    }
+
     // ------------------------------------------------------------------
     //  Run
     // ------------------------------------------------------------------
@@ -390,8 +437,24 @@
                                   (Math.abs(wasDur - rows[i].target.duration) > 0.04
                                       ? "   (length changed - check the trims)" : ""));
                     } else {
-                        importInto(rows[i].file, dest);
-                        done.push("added:  " + rows[i].name);
+                        // Nothing to swap - the audio is new, so it goes
+                        // straight onto the master shot as the top layer
+                        var item = importInto(rows[i].file, dest);
+                        var master = masterComp();
+
+                        if (!master) {
+                            done.push("added:  " + rows[i].name +
+                                      "\n      no master comp found - left in " + DEST_FOLDER);
+                        } else if (layerOf(master, item)) {
+                            done.push("added:  " + rows[i].name +
+                                      "\n      already a layer in " + master.name);
+                        } else {
+                            var L = master.layers.add(item);
+                            L.moveToBeginning();
+                            L.startTime = 0;
+                            done.push("added:  " + rows[i].name +
+                                      "\n      ->  " + master.name + ",  layer 1");
+                        }
                     }
                 } catch (e) {
                     failed.push(rows[i].name + " - " + (e.message || e));
