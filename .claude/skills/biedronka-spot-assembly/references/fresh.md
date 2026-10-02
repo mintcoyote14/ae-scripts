@@ -31,3 +31,5 @@ TVC: `FRESH_T41B_1` = bakador (оферта з REG) | schab vac | szynka lada; P
 
 ## Порядок дій (W41A_1 як приклад)
 Копія `Template_SPOT_Fresh_v10` → перейменування майстра → імпорт 3 PSD у `_CENOWKI` (корінь-папка `_CENOWKI`) → Oferta 1 (Wedliny), Oferta 2 (Mielone), Oferta 4 (Schab) як у REG → стіл → beautyshot solo → збереження. Після кожного кроку рендер і порівняння з PSD-компом.
+
+**Шаблон FRESH тепер `Template_SPOT_Fresh_v11.aep`** (02.10.2026: 6-с майстри мають робочу зону 5,76 с; інакше як v10). Брати v11.
