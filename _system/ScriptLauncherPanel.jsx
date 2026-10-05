@@ -72,6 +72,14 @@
         app.settings.saveSetting(SETTINGS_SECTION, "lastScript", path);
     }
 
+    // Per-machine switch (After Effects prefs, not part of the synced files):
+    // "hideBiedronka" = "true" leaves the Biedronka block out of the panel on
+    // this computer only. Unset / anything else = block shown, as before.
+    function biedronkaHidden() {
+        return app.settings.haveSetting(SETTINGS_SECTION, "hideBiedronka") &&
+               app.settings.getSetting(SETTINGS_SECTION, "hideBiedronka") === "true";
+    }
+
     // --- folder scanning -----------------------------------------------------
     function getScriptFiles(folder) {
         if (!folder || !folder.exists) return [];
@@ -285,25 +293,28 @@
         refreshBtn.helpTip = "Refresh list";
 
         // Row 4: Biedronka - a block of its own, these three are not in the list
-        var biePanel = panel.add("panel", undefined, "Biedronka");
-        biePanel.orientation = "row";
-        biePanel.alignment = ["fill", "bottom"];
-        biePanel.alignChildren = ["fill", "center"];
-        biePanel.spacing = GAP;
-        biePanel.margins = [6, 10, 6, 6];
+        // (skipped entirely when hidden on this machine - bieBtns stays empty)
+        if (!biedronkaHidden()) {
+            var biePanel = panel.add("panel", undefined, "Biedronka");
+            biePanel.orientation = "row";
+            biePanel.alignment = ["fill", "bottom"];
+            biePanel.alignChildren = ["fill", "center"];
+            biePanel.spacing = GAP;
+            biePanel.margins = [6, 10, 6, 6];
 
-        for (var b = 0; b < BIEDRONKA.length; b++) {
-            var bb = biePanel.add("button", undefined, BIEDRONKA[b].label);
-            bb.preferredSize.height = BTN_H;
-            bb.bieFile = BIEDRONKA[b].file;
-            bb.onClick = function () {
-                if (!scriptFolder || !scriptFolder.exists) {
-                    alert("No script folder selected");
-                    return;
-                }
-                runScriptFile(scriptFolder.fsName + "/" + this.bieFile);
-            };
-            bieBtns.push(bb);
+            for (var b = 0; b < BIEDRONKA.length; b++) {
+                var bb = biePanel.add("button", undefined, BIEDRONKA[b].label);
+                bb.preferredSize.height = BTN_H;
+                bb.bieFile = BIEDRONKA[b].file;
+                bb.onClick = function () {
+                    if (!scriptFolder || !scriptFolder.exists) {
+                        alert("No script folder selected");
+                        return;
+                    }
+                    runScriptFile(scriptFolder.fsName + "/" + this.bieFile);
+                };
+                bieBtns.push(bb);
+            }
         }
 
         // Row 5: status - full name of selection / script count
