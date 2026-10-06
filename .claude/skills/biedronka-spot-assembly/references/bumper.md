@@ -41,3 +41,19 @@
 
 ## Шаблони з робочою зоною 5,76 с (02.10.2026)
 У шаблонах 6-с майстри мають робочу зону `0…5,76 с` (144 кадри). Нові версії (старі лишились без змін): **REG `NISKIE CENY\_TEMPLATE\Template_SPOT_v09.aep`** (майстер `BIEDR_REG_TXX_X_Produkt_6`), **FRESH `FRESH\_TEMPLATE\Template_SPOT_Fresh_v11.aep`** (майстри `BIEDR_FRESH_TXX_X_Produkt_6` і старий REG-майстер у ньому), **Świeżaki `…\BiedronkaSwiezaki2026_231584\vfx\shots\_template\compo\Template_spot_5.aep`** (майстер `Bumper_6`). Нові споти й бампери брати з цих версій. Проєкти бамперів W41 (Makarony, Praliny, Wedliny, Schab в `_ai_progress` і `compo`, Winogrona в `_ai_progress` Świeżaki) теж мають зону 5,76; старі `compo`-файли бамперів збережені в `_ai_progress\_backup\…_compo-before-workarea576_20261002.aep`.
+
+## Бампери T41B (06.10.2026, запит Agnieszka Smolińska: «poniżej 150 klatek», тобто 144)
+У Teams: 1× F&V banany, 1× MEAT schab, 3× REG bakalie / rafaello / dallmayr lub colgate (залежить від аудіо). Підготовлено без аудіо й без рендеру (джерело = копія з `compo`, MD5 звірено, у `_ai_progress`):
+| Бампер | Файл | Оферта | Майстер |
+|---|---|---|---|
+| Bakalie (Bakador) | `NISKIE CENY\W41\compo\_ai_progress\W41B_1_Bumper_Bakador_v01` | `Oferta 1` | `BIEDR_REG_T41B_1_Bakador_6` |
+| Rafaello | `…\W41B_2_Bumper_Raffaello_v01` | `Oferta 3` | `BIEDR_REG_T41B_2_Raffaello_6` |
+| Dallmayr / Colgate (обидва, потім зайвий прибрати) | `…\W41B_2_Bumper_Dallmayer_v01`, `…_Colgate_v01` | `Oferta 1` / `Oferta 2` | `BIEDR_REG_T41B_2_Dallmayer_6`, `…_Colgate_6` |
+| Schab | `FRESH\W41\compo\_ai_progress\W41B_1_Bumper_Schab_v01` (з compo `W41B_1_Bakador_Schab_Szynka_v01` від 05.10) | `Oferta 2` (VAC) | `BIEDR_FRESH_T41B_1_Schab_6` |
+| Banany (F&V) | `X:\BiedronkaSwiezaki2026_231584\vfx\shots\W41\compo\_ai_progress\W41B_1_Bumper_Banany_v01` (з `W41B_1_Winogrona_Banany_v01`) | `Oferta 2` у `Bumper_6` → дубль `GANG_T41B_1_BANANY_6` | `GANG_T41B_1_BANANY_6` |
+Робота в кожному: перейменувати 6-с майстер, залишити одну `Oferta N` (решта вимкнені), `comp.set_work_area start:0 duration:5.76` (у проєктах зі старого шаблону v08 зона була 0–6), перевірка кадрів 0,3 / 2,5 / 4,5 / 5,7. `W41B_1`/`W41B_2` проєкти ще з v08, тому зона 0–6 → виправляти. Аудіо digital для B ще не надійшло.
+
+### DN у бампері (Raffaello W41B_2, 06.10.2026) і правка legal
+- **Лого в куті в бампері:** `Logo_ROG` спільний із 30-с майстром, тому для бампера дублюю його (`comp.duplicate 11111 → Logo_ROG_bumper`), підміняю джерело шару `Logo_ROG` у 6-с майстрі (`layer.replace_source`, шар сам перейменується) і правлю ключі лише в дублі. Час у `Logo_ROG` = час майстра − 0,44 (шар стартує з 0,44). Цикл для 6-с (Swivel): стікер 0,64 (−90) → 1,28 (0, hold) → 2,78 (0) → 3,42 (90, hold); `LOGO_PingPong` 0 (0) → 0,64 (90, hold) → 3,42 (−90) → 4,06 (0, hold). Червоний лого знову на місці до ≈4,5 с (майстер) перед блюром/outro; стікер `startTime`/`inPoint` 0,64.
+- **Правка тексту в legal Dallmayr** (`ibez` → `i bez`): `layer.copy_to_comp` легал-шару в активний комп (`WEDLINY_SER_Precomp`), `command.execute 3799`, `text.paste_range` із заміною 1 символу `i` на 2 символи `i ` з іншого місця того ж тексту (`wartości `, стиль збігається; довжина діапазонів може бути різною). Повернення в `Oferta` + старий шар вимкнути й `layer.set_guide`. У самому споті `W41B_2` (вже відрендерений) не чіпала.
+- **Побажання користувача (06.10.2026):** у бампері анімація лого в куті не має стартувати одразу, початкові ключі зсунуті пізніше (він сам виправив у `W41B_2_Bumper_Raffaello_v01`). Наступні бампери з DN ставлю початок циклу пізніше (напр. S ≥ 1,0 с у часі `Logo_ROG`). Перед будь-якою правкою цього файла перечитую його з диска, його правки не відкочую.
