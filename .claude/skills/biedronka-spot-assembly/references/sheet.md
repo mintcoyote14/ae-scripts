@@ -1,7 +1,9 @@
 # Таблиця CNC 2026 і проєкти
 
 ## Як читати
-Google Sheets id `14sx3NGmiSQVzUtOWI2aBmjG_xbHPhfWlQWPSDVFwvw4`. Коннектора Sheets нема, тому читаю через Chrome (`claude-in-chrome`, у логіні користувача): у вкладці таблиці через `javascript_tool` роблю `fetch('https://docs.google.com/spreadsheets/d/<id>/gviz/tq?tqx=out:csv&sheet=<назва вкладки>', {credentials:'include'})` і парсю CSV. Брати **за назвою аркуша**, не за gid (gid у виводі блокується як «query string»); клік по вкладці URL не змінює. Вивід JS обрізається ~1000 символів, тож віддавай по 10–15 рядків. Після роботи закрий вкладку (`tabs_close_mcp`).
+**Тепер доступний коннектор Google Sheets (07.10.2026, користувач підключив).** Читаю таблицю ним, Chrome не потрібен: спершу `ToolSearch select:mcp__9390ea30-1203-4c33-aa9d-0d3c13de1814__get_values,mcp__9390ea30-1203-4c33-aa9d-0d3c13de1814__get_spreadsheet`; `get_spreadsheet` з `fields:["properties.title","sheets.properties.sheetId","sheets.properties.title"]` дає список вкладок (великий, ~250), `get_values` з `spreadsheetId:14sx3NGmiSQVzUtOWI2aBmjG_xbHPhfWlQWPSDVFwvw4` і `range:"'CNC T42 oferty'!A1:N40"` повертає повний текст комірок (legal, механізм, ціни, WIZKI, UWAGI) без обрізання. Запис у таблицю не роблю (лише читання). Chrome-метод нижче лишається запасним.
+
+Google Sheets id `14sx3NGmiSQVzUtOWI2aBmjG_xbHPhfWlQWPSDVFwvw4`. Раніше коннектора не було, тому читав через Chrome (`claude-in-chrome`, у логіні користувача): у вкладці таблиці через `javascript_tool` роблю `fetch('https://docs.google.com/spreadsheets/d/<id>/gviz/tq?tqx=out:csv&sheet=<назва вкладки>', {credentials:'include'})` і парсю CSV. Брати **за назвою аркуша**, не за gid (gid у виводі блокується як «query string»); клік по вкладці URL не змінює. Вивід JS обрізається ~1000 символів, тож віддавай по 10–15 рядків. Після роботи закрий вкладку (`tabs_close_mcp`).
 
 ## Вкладки тижня
 - **`CNC T<NN> oferty`** — складання **візок** (`dmp`): продукт, тексти цінівки, колонка M WIZKI, колонка N UWAGI (з якого тижня брати візку; лінки transfernow = нові матеріали, вручну).
