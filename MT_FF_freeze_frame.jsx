@@ -29,10 +29,15 @@
             var remap = layer.property("ADBE Time Remapping");
             var frozenTime = remap.valueAtTime(t, false);
 
-            while (remap.numKeys > 0) {
-                remap.removeKey(1);
-            }
+            // Add the freeze key first: removing every key would switch Time Remap off
+            // and hide the property, which makes setValueAtTime fail.
             remap.setValueAtTime(t, frozenTime);
+            var keep = remap.nearestKeyIndex(t);
+            for (var k = remap.numKeys; k >= 1; k--) {
+                if (k !== keep) {
+                    remap.removeKey(k);
+                }
+            }
             remap.setInterpolationTypeAtKey(1, KeyframeInterpolationType.HOLD, KeyframeInterpolationType.HOLD);
         }
     } finally {
