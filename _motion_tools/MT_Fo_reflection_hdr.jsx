@@ -1,5 +1,7 @@
 ﻿// Fo: adds reflection_hdr.jpg (FOLIE) on top of the active composition,
-// sets its blending mode to Soft Light and Opacity to 24%.
+// sets its blending mode to Soft Light, Opacity to 24% and turns on
+// Preserve Underlying Transparency, so the foil only shows where the
+// layers below are opaque.
 (function () {
     var FILE_PATH = "X:/BiedronkaPricesOnGoing2026_231510/vfx/assets/DODATKI_DO_PROJEKTU/FOLIE/reflection_hdr.jpg";
 
@@ -33,6 +35,7 @@
 
         var layer = comp.layers.add(footage);
         layer.blendingMode = BlendingMode.SOFT_LIGHT;
+        layer.preserveTransparency = true;      // the T column in the timeline
         layer.property("ADBE Transform Group").property("ADBE Opacity").setValue(24);
     } finally {
         app.endUndoGroup();

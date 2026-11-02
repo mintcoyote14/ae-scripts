@@ -8,7 +8,7 @@
 3. **Імпорт** `importAs:"compRetainLayerSizes"`, новий комп і `… Layers` → `_CENOWKI`. Старий комп і `… Layers` → `_CENOWKI\_OLD` (папку створи `folder.create parent:_CENOWKI`, якщо нема).
 4. **Витягни з нового PSD-компу** id джерел: `data OK`/`data` (comp у `… Layers`), legal (footage `Limit dzienny…/<PSD>.psd`), механізм (footage `mechanizm NEW/…` у comp `mechanizm`), візка (footage `…_Alpha/<PSD>.psd` у comp `plansza`), KA і `nowy mieszaj` (для звіряння). Читай `item.list folder:<…Layers>` і `ae_layer_info` внутрішніх комп-ів.
 5. **Підміна джерел в `Oferta N`** через `layer.replace_source` (зберігає ефекти, ключі, трансформ):
-   1. **перший шар** (прев'ю, 50% і guide) → новий комп цінівки; опacity і guide лишаються;
+   1. **перший шар** (прев'ю) → новий комп цінівки. **Не вважати, що старий шар уже налаштований** (у колег він буває вимкнений, без guide, 100% чи в іншому режимі): після `replace_source` завжди виставити `enabled:true`, `layer.set_guide guide:true`, `property.set ["Transform","Opacity"] 50`, `layer.set_blend_mode normal`, `outPoint:"comp"`; кожен імпорт PSD одразу ставити на 25 fps (комп цінівки і внутрішні комп-и) з тривалістю оферти. Перевірити чеклістом із SKILL.md;
    2. **`data OK`** → comp `data OK`/`data` нової цінівки;
    3. **legal** → footage legal нової цінівки;
    4. **механізм (`mechanizm NEW`/аналог) і візка** → відповідні footage нової цінівки.

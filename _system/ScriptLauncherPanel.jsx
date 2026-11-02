@@ -34,6 +34,10 @@
         return false;
     }
 
+    // Motion Tools Pro buttons point at these by absolute path, so the files
+    // stay where they are - they are only kept out of this list
+    var HIDDEN = /^MT_/i;
+
     // --- compact metrics -----------------------------------------------------
     var BTN_H = 20;      // button height
     var TASK_BTN_H = 26; // pinned task button - a bit taller
@@ -85,7 +89,7 @@
         if (!folder || !folder.exists) return [];
         var files = folder.getFiles(function (f) {
             return (f instanceof File) && VALID_EXT.test(f.name) &&
-                   f.name !== TASK_FILE && !isBiedronka(f.name);
+                   f.name !== TASK_FILE && !isBiedronka(f.name) && !HIDDEN.test(f.name);
         });
         files.sort(function (a, b) {
             return a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1;
