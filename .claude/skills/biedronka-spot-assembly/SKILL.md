@@ -95,6 +95,7 @@ description: Складання споту/бампера Biedronka в After Eff
 | Обробка візок від агенції в Photoshop (`client\…_WIZKI`, скрипт маски) | `references/wizki-photoshop.md` |
 | Підготовка споту до рендеру (DPX, шлях finals, підпапка) | `references/render-prep.md` |
 | Практика роботи з AE MCP (операції, пастки) | `references/ae-mcp.md` |
+| Нові шаблони v11 - demo / Fresh v13 - beta (cenowka-комп-и `compo_assets`) | `references/reg.md`, `references/fresh.md`, розділ 10 в `pipeline-rules.md` |
 | **Зведений чекліст усіх правил (читати першим)** | `references/pipeline-rules.md` |
 
 ## Прогрес і підтверджені домовленості (W41, 01–02.10.2026)

@@ -47,3 +47,13 @@
 ## 9. Планші FRESH при перенесенні: перевірка фону (02.11.2026, W46A Jablka)
 - У `TŁA_DO_ZMIANY` кілька тл (Warzywa, Ryby, Owoce, Mieso_Vac, Mieso_Lada); видиме верхнє ввімкнене. База W16A Jablka мала ввімкнений `Warzywa.png` над `Owoce.png` → планша з овочевим фоном. Після перенесення ЗАВЖДИ рендерити кадр PLANSZA_EXPORT і дивитись фон (фрукти = `Owoce`, м'ясо = `Mieso_*`, риба = `Ryby`, овочі = `Warzywa`); зайві вимкнути.
 - Перерендер: `_Full.png`, що вже існує, перезаписати не вдається (ERR_STOPPED, навіть із жертовним пунктом). Свій свіжий `_Full.png` видалити й рендерити знову; перевірити час/розмір файла.
+
+## 10. Актуальні шаблони (оновлено 09.11.2026)
+| Шоу | Файл | Примітка |
+|---|---|---|
+| REG | `NISKIE CENY\_TEMPLATE\Template_SPOT_v11 - demo.aep` | 05.11, demo: можуть бути збої, повідомляти Maksym; бампер без порожнього кадру (оферти з 0,4 с) |
+| FRESH | `FRESH\_TEMPLATE\Template_SPOT_Fresh_v13- beta.aep` | 05.11, beta; бампер: оферти з 0,36 с |
+| Візки REG | `NISKIE CENY\_TEMPLATE\Template_PRODUCTS_v03_AE2026.aep` | без змін |
+| Візки FRESH | `FRESH\_TEMPLATE\Template_PRODUCTS_v02.aep` | без змін |
+| Świeżaki | `X:\BiedronkaSwiezaki2026_231584\vfx\shots\_template\compo\Template_spot_7.aep` | 21.10, перевірений 09.11 (див. `swiezaki.md`); `Template_spot_6` не відкривала |
+Новинка в REG v10/v11 і FRESH v13: комп-и `Cenowka Pierwsza/Druga/Trzecia/Czwarta` (1920×1500) з уже зібраною анімацією цінівки та власними стікерами `_1…_4` для кожної оферти, у `Oferta N` вимкнені шаром. Спосіб використання в збірці ще не підтверджений (див. `reg.md`): на першій збірці з нового шаблону перевірити й записати, питати користувача. Старі W46-споти й бампери T46A зібрані зі старіших версій.

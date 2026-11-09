@@ -32,7 +32,7 @@ TVC: `FRESH_T41B_1` = bakador (оферта з REG) | schab vac | szynka lada; P
 ## Порядок дій (W41A_1 як приклад)
 Копія `Template_SPOT_Fresh_v10` → перейменування майстра → імпорт 3 PSD у `_CENOWKI` (корінь-папка `_CENOWKI`) → Oferta 1 (Wedliny), Oferta 2 (Mielone), Oferta 4 (Schab) як у REG → стіл → beautyshot solo → збереження. Після кожного кроку рендер і порівняння з PSD-компом.
 
-**Шаблон FRESH тепер `Template_SPOT_Fresh_v11.aep`** (02.10.2026: 6-с майстри мають робочу зону 5,76 с; інакше як v10). Брати v11.
+**Шаблон FRESH тепер `Template_SPOT_Fresh_v11.aep`** (02.10.2026: 6-с майстри мають робочу зону 5,76 с; інакше як v10). Актуальний тепер `Template_SPOT_Fresh_v13- beta.aep` (див. розділ про v13 нижче); v11 застарів.
 
 ## W42B_1 FRESH: Łosoś / Krewetki / Filet kura (08.10.2026)
 Файл `FRESH\W42\compo\_ai_progress\W42B_1_Losos_Krewetki_Filet_v01.aep` (копія `Template_SPOT_Fresh_v11`), майстер `BIEDR_FRESH_T42B_1_Losos_Krewetki_Filet_30` (id 11064), аудіо `audio\20261008\BIEDR_CNC_FRESH_W42B_1_LOSOS_KREWETKI_FILET_30_…wav` шаром 1. Цінівки `client\FRESH\20261008_CENOWKI\1612\CNC_w42B_{ŁOSOŚ,KREWETKI,KURA}.psd`; **ім'я `ŁOSOŚ` на диску в NFD (`S`+U+0301)**, тож шлях для `project.import_file` треба писати саме так, інакше «file not found».
@@ -69,3 +69,12 @@ TVC: `FRESH_T41B_1` = bakador (оферта з REG) | schab vac | szynka lada; P
 - **Стіл:** у цінівках T45 агенція повернула висоту 597/845 (і в м'ясних, і в світлих), на відміну від T44 (619/871); шаблонні `Mieso_VAC` і `Blat_Niskie_Ceny` (Y 586) збіглися без правок (у W44B_1 довелося опускати до 607!). Завжди міряти по рендеру PSD-компу кожного тижня, не переносити виправлення з минулого.
 - **Люди (правило різних людей):** Oferta 1 `Czlowiek_VAC` (чол. зелена куртка), Oferta 2 `woman_02`, Oferta 3 `man_01`.
 - **Beautyshot:** Pierwszy `Miesa_VAC.mov` (idx 33), Drugi `Ser.mov` (idx 31, полиця Światowid), Trzeci `Szynka.mov` (idx 7); переходи `Transition_LOGO_01/02` вимкнені й на 2,12; `Oferta 4` і `Czwarty_Beautyshot` вимкнені+shy.
+
+## Шаблон FRESH v13 - beta (Maksym Kuznietsov, 05.11.2026)
+Файл `FRESH\_TEMPLATE\Template_SPOT_Fresh_v13- beta.aep` (у назві пробіл після дефіса; 12,8 МБ проти 24 МБ у v11: Maksym «поприбирав проєкт, нібито все працює, також виправив порожній кадр у бамперах; якщо щось не працює, дайте знати»). Позначений beta, тому нові FRESH-споти брати з v13, але звіряти результат і повідомляти про збої.
+Перевірено читанням (09.11.2026, 278 елементів):
+- Папка `cenowki` має ті самі комп-и, що REG v11: `Cenowka Pierwsza/Druga/Trzecia/Czwarta` (1920×1500), `MEGA PAKA`, `pakowany 2`, `produktpolski 2`, `RECYKLOMAT_*`, `Aplikacja`, `Cenowka*`, `MD`.
+- Фони як комп-и в `Comps`: `Mieso_Lada`, `Mieso_VAC`, `Ryby`, `Owoce_Tlo` (`plansza`), `Warzywa_Tlo`, плюс REG-фони.
+- **`Oferta 1`** — REG-подібна (25 шарів). **`Oferta 2/3/4`** — легкі FRESH-оферти (8/7/7 шарів): `MEGA PAKA` (ввімкнена), `Cenowka` (ввімкнена), `Cenowka Druga/Trzecia/Czwarta` (вимкнена), і п'ять шарів фону `Ryby`, `Warzywa`, `Mieso_Lada`, `Mieso_VAC` (ввімкнений у шаблоні), `Owoce`; бажаний лишається один ввімкнений.
+- 6-с майстер `BIEDR_FRESH_TXX_X_Produkt_6` (8 шарів): `Opening` видно до 1,36 с, `Logo_ROG` і `Blur_Przejscia_outro` з 0,72, **`Oferta 1..4` з 0,36 с** (було 0,4), `OUTRO_SUPER_SHORT` з 5,04, робоча зона 0–5,76. Шар аудіо в бампері додається зверху як раніше.
+- Як у REG: невідомо, чи треба вмикати `Cenowka <N>`; перевірити при першій збірці.
